@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pasaporta Digjitale | Ardi</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #eef2ff, #dbeafe);
+            color: #1e293b;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #1e3a8a;
+            color: white;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            font-size: 22px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #bfdbfe;
+        }
+
+        .hero {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .profile {
+            background: white;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .content h1 {
+            font-size: 42px;
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+
+        .content h3 {
+            color: #2563eb;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            line-height: 1.7;
+            font-size: 17px;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 13px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #1d4ed8;
+        }
+
+        .skills {
+            max-width: 1000px;
+            margin: 0 auto 60px;
+            padding: 0 20px;
+        }
+
+        .skills h2 {
+            text-align: center;
+            color: #1e3a8a;
+            margin-bottom: 30px;
+        }
+
+        .skill-list {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            justify-content: center;
+        }
+
+        .skill-list li {
+            background: white;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            font-weight: bold;
+        }
+
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 700px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            .skill-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skill-list li {
+                width: 90%;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>🎓 Pasaporta Digjitale</h2>
+
+        <nav>
+            <a href="index.html">Ballina</a>
+            <a href="rreth.html">Rreth meje</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <div class="profile">
+                🧑‍🎓
+            </div>
+
+            <div class="content">
+
+                <h1>Ardi</h1>
+
+                <h3>Kandidat për Udhërrëfyes të Kampusit</h3>
+
+                <p>
+                    Përshëndetje! Unë jam Ardi, një personazh i sajuar
+                    që dëshiron të jetë udhërrëfyes i kampusit.
+                    Qëllimi im është t'i ndihmoj studentët e rinj
+                    të orientohen më lehtë dhe të ndihen të mirëpritur.
+                </p>
+
+                <a class="button" href="rreth.html">
+                    Më shumë rreth meje →
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="skills">
+
+            <h2>⭐ Aftësitë e mia</h2>
+
+            <ul class="skill-list">
+                <li>🗣️ Komunikim</li>
+                <li>🧭 Orientim në kampus</li>
+                <li>🤝 Punë në grup</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Pasaporta Digjitale | Personazh i sajuar</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <title>Muzeu i gjerave</title>
+</head>
+
+<body>
+
+    <h1>Muzeu i gjerave</h1>
+
+    <hr>
+
+    <p>
+        <a href="#" onclick="hapQelesin(); return false;">Çelësi</a> |
+        <a href="#" onclick="hapFilxhanin(); return false;">Filxhani</a> |
+        <a href="#" onclick="hapBileten(); return false;">Bileta</a>
+    </p>
+
+    <p>Ekspozita: 1 tetor 2026</p>
+
+    <table border="1" cellpadding="15">
+        <tr>
+
+            <!-- ÇELËSI -->
+            <td>
+                <h2>Çelësi</h2>
+
+                <img src="qelesi.png"
+                     alt="Çelësi"
+                     width="165">
+
+                <p>
+                    Hapja e një dere mund të jetë
+                    fillimi i një historie.
+                </p>
+
+                <details>
+                    <summary>Historia e fshehur</summary>
+                    <p>
+                        Ky është një çelës i vjetër.
+                    </p>
+                </details>
+            </td>
+
+
+            <!-- FILXHANI -->
+            <td>
+                <h2>Filxhani</h2>
+
+                <img src="filxhani.png"
+                     alt="Filxhani"
+                     width="165">
+
+                <p>
+                    Një filxhan mbledh kujtime
+                    nga bisedat.
+                </p>
+
+                <details>
+                    <summary>Historia e fshehur</summary>
+                    <p>
+                        Ky filxhan ruan kujtime
+                        nga shumë biseda.
+                    </p>
+                </details>
+            </td>
+
+
+            <!-- BILETA -->
+            <td>
+                <h2>Bileta</h2>
+
+                <img src="bileta.png"
+                     alt="Bileta"
+                     width="165">
+
+                <p>
+                    Një udhëtim i shkurtër,
+                    një kujtim i gjatë.
+                </p>
+
+                <details>
+                    <summary>Historia e fshehur</summary>
+                    <p>
+                        Kjo biletë është kujtim
+                        i një udhëtimi.
+                    </p>
+                </details>
+            </td>
+
+        </tr>
+    </table>
+
+
+    <script>
+
+        function hapQelesin() {
+
+            let dritare = window.open("", "_blank", "width=600,height=600");
+
+            dritare.document.write(`
+                <html>
+                <head>
+                    <title>Çelësi</title>
+                </head>
+
+                <body>
+
+                    <h1>Çelësi</h1>
+
+                    <img src="qelesi.png"
+                         alt="Çelësi"
+                         width="300">
+
+                    <h2>Përshkrimi</h2>
+
+                    <p>
+                        Hapja e një dere mund të jetë
+                        fillimi i një historie.
+                    </p>
+
+                    <h2>Historia e fshehur</h2>
+
+                    <p>
+                        Ky është një çelës i vjetër.
+                    </p>
+
+                </body>
+                </html>
+            `);
+
+            dritare.document.close();
+        }
+
+
+        function hapFilxhanin() {
+
+            let dritare = window.open("", "_blank", "width=600,height=600");
+
+            dritare.document.write(`
+                <html>
+                <head>
+                    <title>Filxhani</title>
+                </head>
+
+                <body>
+
+                    <h1>Filxhani</h1>
+
+                    <img src="filxhani.png"
+                         alt="Filxhani"
+                         width="300">
+
+                    <h2>Përshkrimi</h2>
+
+                    <p>
+                        Një filxhan mbledh kujtime
+                        nga bisedat.
+                    </p>
+
+                    <h2>Historia e fshehur</h2>
+
+                    <p>
+                        Ky filxhan ruan kujtime
+                        nga shumë biseda.
+                    </p>
+
+                </body>
+                </html>
+            `);
+
+            dritare.document.close();
+        }
+
+
+        function hapBileten() {
+
+            let dritare = window.open("", "_blank", "width=600,height=600");
+
+            dritare.document.write(`
+                <html>
+                <head>
+                    <title>Bileta</title>
+                </head>
+
+                <body>
+
+                    <h1>Bileta</h1>
+
+                    <img src="bileta.png"
+                         alt="Bileta"
+                         width="300">
+
+                    <h2>Përshkrimi</h2>
+
+                    <p>
+                        Një udhëtim i shkurtër,
+                        një kujtim i gjatë.
+                    </p>
+
+                    <h2>Historia e fshehur</h2>
+
+                    <p>
+                        Kjo biletë është kujtim
+                        i një udhëtimi.
+                    </p>
+
+                </body>
+                </html>
+            `);
+
+            dritare.document.close();
+        }
+
+    </script>
+
+</body>
+</html>

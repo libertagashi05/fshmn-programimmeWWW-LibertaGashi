@@ -1,50 +1,32 @@
 ProgramimineWWW
-Java1 – Pasaporta digjitale
+Java2
+Ky projekt është një faqe e thjeshtë HTML që paraqet një ekspozitë virtuale me tre sende: çelësin, filxhanin dhe biletën.
 
-Krijova një pasaportë digjitale për një personazh të sajuar që kandidon si udhërrëfyes i kampusit.
+Çfarë kemi bërë deri tani?
+Kemi krijuar një faqe kryesore me titullin "Muzeu i gjërave".
 
-Në Java1 realizova dy faqe:
+Kemi vendosur një vijë ndarëse me <hr>.
 
-Java1/index.html
+Kemi krijuar tre opsione:
 
-JavaI/rreth.html
+Çelësi
 
-Gjithashtu krijova folderët nga Java1 deri në Java14.
+Filxhani
 
-Si hapet
-Hap projektin ProgramimineWWW.
+Bileta
 
-Nis serverin lokal.
+Kemi shtuar datën e ekspozitës: 1 tetor 2026.
 
-Hap Java1/index.html përmes serverit lokal.
+Kemi përdorur një tabelë HTML me <table> për t'i paraqitur tre sendet në kolona.
 
-Kliko lidhjen për të hapur rreth.html.
+Për secilin send kemi vendosur:
 
-Kliko lidhjen e kthimit për t'u kthyer te index.html.
+Titullin me <h2>
 
-Testet
-Testi 1 – Faqja kryesore
-Hyrja: Hapja e index.html.
+Fotografinë me <img>
 
-Rezultati i pritur: Faqja kryesore shfaqet pa gabime.
+Përshkrimin
 
-Rezultati i marrë: Faqja kryesore u shfaq pa gabime.
+Një pjesë "Historia e fshehur"
 
-Testi 2 – Lidhja drejt rreth.html
-Hyrja: Klikimi i lidhjes nga index.html.
-
-Rezultati i pritur: Hapet rreth.html pa gabim 404.
-
-Rezultati i marrë: rreth.html u hap me sukses.
-
-Testi 3 – Lidhja e kthimit
-Hyrja: Klikimi i lidhjes së kthimit.
-
-Rezultati i pritur: Hapet përsëri index.html.
-
-Rezultati i marrë: index.html u hap me sukses.
-
-DevTools – Network
-Faqja u testua përmes serverit lokal.
-
-URL: 
+Për historinë e fshehur kemi përdorur elementet <details> dhe <summary>, të cilat mundësojnë hapjen dhe mbylljen e tekstit duke klikuar mbi të.

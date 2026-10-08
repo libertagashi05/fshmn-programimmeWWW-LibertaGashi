@@ -1,0 +1,27 @@
+.poster {
+    width: 100%;
+    max-width: 100%;
+
+    overflow-wrap: anywhere;
+}
+
+
+/*
+   Nuk vendosim width fikse si 700px ose 800px,
+   sepse ekrani mund të jetë vetëm 360px.
+   =========================================
+   PARANDALIM I TEJKALIMIT NGA TEKSTI
+   ========================================= */
+
+.poster h2,
+.poster p,
+.badge,
+.register-link {
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+
+/*
+   Asnjë !important nuk është përdorur.
+*/

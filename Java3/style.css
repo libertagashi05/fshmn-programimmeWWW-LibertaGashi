@@ -1,0 +1,277 @@
+/* =========================================
+   VARIABLAT
+   ========================================= */
+
+:root {
+    --color-bg: #f3f6fa;
+    --color-panel: #ffffff;
+    --color-text: #102a43;
+    --color-muted: #486581;
+    --color-primary: #087f73;
+    --color-primary-dark: #05665d;
+    --color-border: #cbd5e1;
+
+    --space-xs: 0.4rem;
+    --space-sm: 0.7rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+
+    --radius-sm: 0.5rem;
+    --radius-md: 0.8rem;
+
+    --shadow: 0 4px 14px rgba(16, 42, 67, 0.08);
+}
+
+
+/* =========================================
+   BOX MODEL
+   ========================================= */
+
+/*
+   box-sizing: border-box bën që width të përfshijë:
+   content + padding + border.
+
+   Pra, nëse një element ka width: 100%,
+   padding-u dhe border-i nuk e bëjnë elementin
+   më të gjerë se prindi.
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+   ========================================= */
+
+body {
+    margin: 0;
+    min-width: 0;
+
+    background-color: var(--color-bg);
+    color: var(--color-text);
+
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.site-header {
+    padding: var(--space-md) var(--space-lg) var(--space-lg);
+
+    border-bottom: 3px solid var(--color-primary);
+}
+
+.reference {
+    margin: 0 0 var(--space-md);
+
+    font-size: 0.9rem;
+    color: var(--color-muted);
+}
+
+.site-header h1 {
+    margin: 0;
+
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+}
+
+
+/* =========================================
+   CONTAINER
+   ========================================= */
+
+.container {
+    width: 100%;
+    max-width: 720px;
+
+    margin: var(--space-xl) auto;
+    padding: 0 var(--space-md);
+}
+
+
+/* =========================================
+   AFISHJA / PANELI
+   ========================================= */
+
+.poster {
+    width: 100%;
+    max-width: 100%;
+
+    padding: clamp(1rem, 4vw, 2rem);
+
+    background-color: var(--color-panel);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    box-shadow: var(--shadow);
+}
+
+
+/* =========================================
+   ETIKETAT
+   ========================================= */
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+
+    margin-bottom: var(--space-lg);
+}
+
+
+/*
+   Klasë e ripërdorshme për të gjitha etiketat.
+*/
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+
+    min-height: 2.5rem;
+    padding: 0.45rem 0.8rem;
+
+    border: 2px solid var(--color-primary);
+    border-radius: 999px;
+
+    background-color: #fff;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+
+/*
+   Nuk përdoret vetëm ngjyra për dallim.
+   Çdo etiketë ka edhe tekst/simbol të ndryshëm.
+*/
+
+.badge-free {
+    border-style: solid;
+}
+
+.badge-limited {
+    border-style: dashed;
+}
+
+.badge-online {
+    border-style: double;
+}
+
+
+/* =========================================
+   TITULLI
+   ========================================= */
+
+.poster h2 {
+    margin: 0 0 var(--space-lg);
+
+    font-size: clamp(1.4rem, 5vw, 1.9rem);
+    line-height: 1.25;
+}
+
+
+/* =========================================
+   INFORMACIONI
+   ========================================= */
+
+.event-info {
+    margin: 0 0 var(--space-md);
+
+    color: var(--color-text);
+}
+
+.description {
+    margin: 0 0 var(--space-lg);
+
+    color: var(--color-muted);
+}
+
+
+/* =========================================
+   LINKU I REGJISTRIMIT
+   ========================================= */
+
+.register-link {
+    display: inline-block;
+
+    padding: 0.7rem 1rem;
+
+    background-color: var(--color-primary);
+    color: #ffffff;
+
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-sm);
+
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+/*
+   Gjendja focus-visible shfaqet kur përdoruesi
+   navigon me tastierë, p.sh. me TAB.
+*/
+
+.register-link:focus-visible {
+    outline: 4px solid #f59e0b;
+    outline-offset: 4px;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.site-footer {
+    padding: var(--space-lg) var(--space-md);
+
+    color: var(--color-muted);
+    font-size: 0.9rem;
+}
+
+
+/* =========================================
+   RESPONSIVE - TELEFON
+   ========================================= */
+
+@media (max-width: 360px) {
+
+    .site-header {
+        padding-left: var(--space-md);
+        padding-right: var(--space-md);
+    }
+
+    .container {
+        margin-top: var(--space-lg);
+        padding-left: var(--space-sm);
+        padding-right: var(--space-sm);
+    }
+
+    .poster {
+        padding: var(--space-md);
+    }
+
+    .badges {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .badge {
+        width: 100%;
+    }
+
+    .register-link {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,227 @@
+/* Ngjyrat dhe përmasat bazë */
+:root {
+    --color-bg: #f1f5f9;
+    --color-card: #ffffff;
+    --color-text: #172033;
+    --color-muted: #526176;
+    --color-primary: #075985;
+    --color-primary-dark: #064568;
+    --color-border: #d6e0e8;
+    --space: 1rem;
+}
+
+/* Përmasat e elementeve */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 1rem;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+    background: var(--color-bg);
+}
+
+/* Lidhja për kalimin te përmbajtja */
+.skip-link {
+    display: inline-block;
+    margin: 0.5rem 1rem;
+    padding: 0.5rem;
+}
+
+.skip-link:focus-visible {
+    outline: 3px solid #eab308;
+    outline-offset: 3px;
+}
+
+/* Menuja fleksibile */
+.header {
+    background: var(--color-card);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    padding: 1rem 5%;
+    background: var(--color-primary);
+}
+
+.menu a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.menu a:focus-visible,
+.details-link:focus-visible {
+    outline: 3px solid #eab308;
+    outline-offset: 4px;
+}
+
+/* Hyrja e faqes */
+.intro {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 3rem;
+}
+
+h1 {
+    max-width: 800px;
+    margin: 0.5rem 0 1rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+}
+
+.intro > p:last-child {
+    max-width: 650px;
+    color: var(--color-muted);
+}
+
+/* Përmbajtja kryesore */
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem;
+    min-width: 0;
+}
+
+.section-heading {
+    margin-bottom: 1.5rem;
+}
+
+.section-heading h2,
+.about h2 {
+    margin-bottom: 0.25rem;
+}
+
+.section-heading p,
+.about p {
+    color: var(--color-muted);
+}
+
+/* Grid: një kolonë si parazgjedhje */
+.activity-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.25rem;
+}
+
+/* Kartat */
+.card {
+    min-width: 0;
+    overflow: hidden;
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgb(23 32 51 / 7%);
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.25rem;
+    min-width: 0;
+}
+
+.category {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 0.65rem;
+    color: var(--color-primary-dark);
+    background: #e0f2fe;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.card h3 {
+    margin: 0 0 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+.card p {
+    overflow-wrap: anywhere;
+}
+
+.card-content > p:not(.schedule) {
+    color: var(--color-muted);
+}
+
+.schedule {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+.details-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--color-primary);
+    font-weight: 700;
+    text-underline-offset: 0.2em;
+    overflow-wrap: anywhere;
+}
+
+.details-link:hover {
+    color: var(--color-primary-dark);
+}
+
+/* Seksioni informues */
+.about {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: 0.75rem;
+    overflow-wrap: anywhere;
+}
+
+/* Footer */
+footer {
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--color-muted);
+    background: var(--color-card);
+    border-top: 1px solid var(--color-border);
+}
+
+/* 600–899 px: dy kolona */
+@media (min-width: 600px) {
+    .activity-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    main {
+        padding: 2rem;
+    }
+}
+
+/* 900 px e lart: tri kolona */
+@media (min-width: 900px) {
+    .activity-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}

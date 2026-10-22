@@ -1,24 +1,23 @@
-ProgramimineWWW
-Java3
-Ky projekt eshte realizuar me HTML5 dhe CSS3, që paraqet një afishe për një event debati.
+Festivali që përshtatet në çdo ekran
 
-Afisheja përmban:
+Krijova një faqe web responsive për një festival me gjashtë karta aktivitetesh dhe një menu fleksibile. Çdo kartë përmban imazh, titull, kategori, orar, përshkrim dhe lidhje për detaje.
 
-Titullin e eventit
-Datën dhe orën
-Vendin
-Përshkrimin
-Lidhjen për regjistrim
-Tri etiketa: Falas, Vende të kufizuara dhe Edhe online
+Përdora HTML5 dhe CSS3, duke përfshirë CSS Grid për organizimin e kartave, Flexbox për menunë dhe media queries për përshtatjen e faqes në madhësi të ndryshme të ekranit. Gjithashtu, kujdesa që tekstet e gjata të qëndrojnë brenda kartave dhe që menuja të mund të përdoret me tastierë.
 
-Karakteristikat
-CSS është në skedar të jashtëm.
-Përdoren variabla CSS për ngjyra dhe hapësira.
-Përdoren klasa të ripërdorshme.
-Paneli përshtatet edhe në ekran 360px.
-Etiketat dallohen me tekst, simbole dhe stile të ndryshme të border-it, jo vetëm me ngjyrë.
-Linku i regjistrimit ka gjendje të dukshme focus-visible gjatë navigimit me Tab.
-Përdoret box-sizing: border-box për të shmangur tejkalimin e gjerësisë.
-Gabimet CSS janë dokumentuar dhe rregulluar pa përdorur !important.
+Hapat e hapjes
 
-Qëllimi i projektit është të demonstrojë përdorimin e HTML dhe CSS të organizuar, dizajn responsive dhe praktika bazë të aksesueshmërisë.
+-Hap folderin e projektit në Visual Studio Code.
+
+-Kontrollo që folderi përmban skedarët index.html, style.css dhe README.md.
+
+-Hap skedarin index.html.
+
+Provat 
+
+-Në 360/768/1280 px shfaqen përkatësisht 1/2/3 kolona.
+-Nuk ka scroll horizontal në faqen e plotë.
+-Menuja mbetet e përdorshme me tastierë.
+
+Kur do të zgjidhje Flexbox dhe kur Grid?
+
+Do të zgjidhja Flexbox kur dua të organizoj elementet në një drejtim, horizontalisht ose vertikalisht. Do të zgjidhja Grid kur dua të organizoj elementet në rreshta dhe kolona.

@@ -43,11 +43,6 @@
     box-sizing: border-box;
 }
 
-
-/* =========================================
-   BODY
-   ========================================= */
-
 body {
     margin: 0;
     min-width: 0;
@@ -58,11 +53,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
-
-
-/* =========================================
-   HEADER
-   ========================================= */
 
 .site-header {
     padding: var(--space-md) var(--space-lg) var(--space-lg);
@@ -83,11 +73,6 @@ body {
     font-size: clamp(1.8rem, 5vw, 2.5rem);
 }
 
-
-/* =========================================
-   CONTAINER
-   ========================================= */
-
 .container {
     width: 100%;
     max-width: 720px;
@@ -95,11 +80,6 @@ body {
     margin: var(--space-xl) auto;
     padding: 0 var(--space-md);
 }
-
-
-/* =========================================
-   AFISHJA / PANELI
-   ========================================= */
 
 .poster {
     width: 100%;
@@ -114,11 +94,6 @@ body {
 
     box-shadow: var(--shadow);
 }
-
-
-/* =========================================
-   ETIKETAT
-   ========================================= */
 
 .badges {
     display: flex;
@@ -167,22 +142,12 @@ body {
     border-style: double;
 }
 
-
-/* =========================================
-   TITULLI
-   ========================================= */
-
 .poster h2 {
     margin: 0 0 var(--space-lg);
 
     font-size: clamp(1.4rem, 5vw, 1.9rem);
     line-height: 1.25;
 }
-
-
-/* =========================================
-   INFORMACIONI
-   ========================================= */
 
 .event-info {
     margin: 0 0 var(--space-md);
@@ -195,11 +160,6 @@ body {
 
     color: var(--color-muted);
 }
-
-
-/* =========================================
-   LINKU I REGJISTRIMIT
-   ========================================= */
 
 .register-link {
     display: inline-block;
@@ -227,22 +187,12 @@ body {
     outline-offset: 4px;
 }
 
-
-/* =========================================
-   FOOTER
-   ========================================= */
-
 .site-footer {
     padding: var(--space-lg) var(--space-md);
 
     color: var(--color-muted);
     font-size: 0.9rem;
 }
-
-
-/* =========================================
-   RESPONSIVE - TELEFON
-   ========================================= */
 
 @media (max-width: 360px) {
 

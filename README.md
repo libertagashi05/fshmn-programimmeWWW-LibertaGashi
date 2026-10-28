@@ -1,23 +1,30 @@
-Festivali që përshtatet në çdo ekran
+Formulari i misionit sekret
 
-Krijova një faqe web responsive për një festival me gjashtë karta aktivitetesh dhe një menu fleksibile. Çdo kartë përmban imazh, titull, kategori, orar, përshkrim dhe lidhje për detaje.
+Java5
 
-Përdora HTML5 dhe CSS3, duke përfshirë CSS Grid për organizimin e kartave, Flexbox për menunë dhe media queries për përshtatjen e faqes në madhësi të ndryshme të ekranit. Gjithashtu, kujdesa që tekstet e gjata të qëndrojnë brenda kartave dhe që menuja të mund të përdoret me tastierë.
+ Hyrjet
 
-Hapat e hapjes
+- Pseudonimi: 3–20 karaktere.
+- Email-i: në format të vlefshëm.
+- Numri i personave: 1–5.
+- Kategoria: Art ose Shkencë.
+- Pranimi i rregullave: duhet të jetë i zgjedhur.
 
--Hap folderin e projektit në Visual Studio Code.
+ Daljet
+ 
+- Nëse të dhënat janë të pasakta, shfaqet mesazhi i validimit.
+- Nëse të dhënat janë të sakta, hapet faqja `pranuar.html`.
+- Të dhënat shfaqen në URL përmes GET dhe nuk ruhen në server.
 
--Kontrollo që folderi përmban skedarët index.html, style.css dhe README.md.
+ Rastet e testimit
 
--Hap skedarin index.html.
+- Rasti normal:Plotësohen të gjitha fushat saktë dhe hapet faqja e konfirmimit.
+- Rasti kufitar 1: Pseudonimi ka 3 karaktere dhe numri i personave është 1. Formulari pranohet nëse fushat e tjera janë të sakta.
+- Rasti kufitar 2: Pseudonimi ka 20 karaktere dhe numri i personave është 5. Formulari pranohet nëse fushat e tjera janë të sakta.
 
-Provat 
+Reflektimi individual
 
--Në 360/768/1280 px shfaqen përkatësisht 1/2/3 kolona.
--Nuk ka scroll horizontal në faqen e plotë.
--Menuja mbetet e përdorshme me tastierë.
+Pse required në frontend nuk provon që të dhënat në një sistem real janë të sigurta?
 
-Kur do të zgjidhje Flexbox dhe kur Grid?
-
-Do të zgjidhja Flexbox kur dua të organizoj elementet në një drejtim, horizontalisht ose vertikalisht. Do të zgjidhja Grid kur dua të organizoj elementet në rreshta dhe kolona.
+required në frontend kontrollon që fushat e detyrueshme të mos lihen bosh, por nuk garanton sigurinë e të dhënave. Përdoruesi mund ta anashkalojë validimin në shfletues dhe të dërgojë të dhëna direkt te serveri.
+Në një sistem real, serveri duhet t'i kontrollojë përsëri të dhënat dhe të zbatojë masa sigurie për të parandaluar hyrjet e pavlefshme ose sulmet.

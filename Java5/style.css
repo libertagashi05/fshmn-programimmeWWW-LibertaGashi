@@ -1,0 +1,229 @@
+
+/* Ngjyrat dhe hapësirat */
+:root {
+    --background: #f2f5fa;
+    --text: #18314f;
+    --primary: #11766c;
+    --border: #bdcbdc;
+    --white: #ffffff;
+}
+
+/* Përmasat e elementeve */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0 2rem;
+    background: var(--background);
+    color: var(--text);
+    font-family: system-ui, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Kreu i faqes */
+header {
+    padding: 1rem 0;
+    border-bottom: 2px solid var(--primary);
+}
+
+header p {
+    margin: 0 0 0.4rem;
+    font-size: 0.85rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* Përmbajtja kryesore */
+main {
+    width: 100%;
+    max-width: 900px;
+    margin: 1.5rem auto;
+}
+
+.panel h2 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.panel hr {
+    margin: 2rem 0;
+    border: 0;
+    border-top: 2px solid var(--primary);
+}
+
+.info {
+    margin: 0 0 1rem;
+    font-size: 0.85rem;
+}
+
+/* Fushat e formularit */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
+    margin-bottom: 0.75rem;
+}
+
+label,
+legend {
+    font-size: 0.85rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 150px;
+    max-width: 100%;
+    min-height: 35px;
+    padding: 0.45rem;
+    border: 1px solid #9aabc0;
+    border-radius: 4px;
+    background: var(--white);
+    color: var(--text);
+    font: inherit;
+}
+
+input[type="email"] {
+    width: 150px;
+}
+
+fieldset {
+    min-width: 0;
+    margin: 1rem 0 0.75rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border);
+}
+
+legend {
+    padding: 0 0.25rem;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin: 0.35rem 0;
+}
+
+.radio-group input,
+.checkbox-group input {
+    margin: 0;
+}
+
+.radio-group label,
+.checkbox-group label {
+    cursor: pointer;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 0.75rem 0 1rem;
+}
+
+/* Butoni */
+button {
+    padding: 0.65rem 0.85rem;
+    border: 0;
+    border-radius: 5px;
+    background: var(--primary);
+    color: var(--white);
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #30bcae;
+}
+
+/* Fokus i dukshëm për tastierën */
+a:focus-visible,
+input:focus-visible,
+button:focus-visible {
+    outline: 3px solid #e69b26;
+    outline-offset: 3px;
+}
+
+/* Tabela e orarit */
+.schedule {
+    width: 100%;
+    margin-top: 1.5rem;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.85rem;
+}
+
+caption {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 0.5rem;
+    border: 1px solid var(--border);
+}
+
+thead th,
+tbody th {
+    font-weight: 700;
+}
+
+tbody tr:nth-child(even) {
+    background: #edf2f8;
+}
+
+/* Fundi i faqes */
+footer {
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/* Lidhja për të kaluar te përmbajtja */
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: 0;
+    padding: 0.5rem;
+    background: var(--white);
+    color: var(--text);
+}
+
+.skip:focus {
+    left: 1rem;
+    z-index: 10;
+}
+
+/* Ekrane të vogla */
+@media (max-width: 600px) {
+    body {
+        padding: 0 1rem;
+    }
+
+    main {
+        margin-top: 1rem;
+    }
+
+    .panel h2 {
+        font-size: 1.35rem;
+    }
+
+    .schedule {
+        max-width: 100%;
+    }
+}
+

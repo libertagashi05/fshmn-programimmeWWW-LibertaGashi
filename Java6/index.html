@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="sq">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulatori i Buxhetit</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Kalkulatori i Buxhetit</h1>
+
+        <p class="description">
+            Kontrolloni nëse aktivitetet e grupit përfshihen në buxhet.
+        </p>
+
+        <div class="form-group">
+            <label for="cmimi">Çmimi për person (€)</label>
+            <input type="number" id="cmimi" step="any"
+                placeholder="Shkruani çmimin">
+        </div>
+
+        <div class="form-group">
+            <label for="persona">Numri i personave (1-5)</label>
+            <input type="number" id="persona" step="1"
+                placeholder="Shkruani numrin e personave">
+        </div>
+
+        <div class="form-group">
+            <label for="buxheti">Buxheti (€)</label>
+            <input type="number" id="buxheti" step="any"
+                placeholder="Shkruani buxhetin">
+        </div>
+
+        <button type="button" id="llogaritBtn">
+            Llogarit
+        </button>
+
+        <div id="rezultati" class="rezultati">
+            <h3>Rezultati</h3>
+            <p>Plotësoni të dhënat dhe shtypni Llogarit.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
